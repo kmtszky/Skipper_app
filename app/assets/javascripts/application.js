@@ -25,3 +25,18 @@ $(document).ready(function() {
     $(this).css('color', 'red');
   });
 });
+
+$(document).ready(function() {
+  $('#theTarget').skippr ({
+    transition: 'slide',
+    speed: 3000,
+    easing: 'easeOutQuart',
+    navType: 'block',
+    childrenElementType: 'div',
+    allows: true,
+    autoPlay: true,
+    autoPlayDirection: 3000,
+    keyboardOnAlways: true,
+    hidePrevious: false
+  });
+});
